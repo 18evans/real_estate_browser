@@ -1,0 +1,65 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- default background color-->
+        <item name="android:statusBarColor">@color/grey_light</item>
+        <item name="android:windowBackground">@color/grey_light</item>
+        <!-- set light mode status bar-->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="ThemeActionBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="background">@null</item>
+        <item name="android:background">@null</item>
+        <item name="backgroundStacked">@null</item>
+        <item name="backgroundSplit">@null</item>
+    </style>
+
+    <style name="CustomCollapsingToolbar">
+        <item name="expandedTitleMargin">@dimen/spacing_large</item>
+        <item name="expandedTitleTextAppearance">@style/TextViewHeader</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="TextViewEstateDetail" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableTint">@color/medium</item>
+        <item name="android:drawablePadding">@dimen/spacing_xsmall</item>
+        <item name="android:textColor">@color/medium</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scaleX">0.7</item>
+        <item name="android:scaleY">0.7</item>
+    </style>
+
+    <style name="TextViewEstateDetailItem" parent="TextViewEstateDetail" />
+
+    <style name="TextViewEstateDetailItem.Larger">
+        <item name="android:scaleX">0.9</item>
+        <item name="android:scaleY">0.9</item>
+    </style>
+
+    <style name="ImageViewRoundedCorners">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/default_corner_radius</item>
+    </style>
+
+    <style name="TextViewHeader">
+        <item name="android:textColor">@color/strong</item>
+        <item name="android:textSize">@dimen/text_xlarge</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

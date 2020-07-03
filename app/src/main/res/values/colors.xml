@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">@color/red</color>
+
+    <color name="red">#E65541</color>
+    <color name="grey_light">#F7F7F7</color>
+    <color name="grey_dark">#EBEBEB</color>
+    <color name="strong">#CC000000</color>
+    <color name="medium">#66000000</color>
+    <color name="light">#33000000</color>
+
+</resources>
+
+    <!--    <color name="colorPrimary">@color/strong</color>-->
+    <!--    <color name="colorAccent">#E65541</color>-->

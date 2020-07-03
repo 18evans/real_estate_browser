@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_estates">
+
+    <!--Todo figure out how to make estates + detial be in a nested graph
+    while also making bottomnavbar button to Estates to work when on the About tab-->
+    <fragment
+        android:id="@+id/navigation_estates"
+        android:name="evans18.realestatebrowser.ui.fragment.estate.EstatesFragment"
+        android:label="@string/title_estates"
+        tools:layout="@layout/fragment_estates">
+        <action
+            android:id="@+id/action_navigation_estates_to_estate_details"
+            app:destination="@id/navigation_estate_detail"
+            app:enterAnim="@anim/top_in"
+            app:exitAnim="@anim/bottom_out"
+            app:popEnterAnim="@anim/bottom_in"
+            app:popExitAnim="@anim/top_out" />
+    </fragment>
+
+    <!-- label/title will be affected programmatically-->
+    <fragment
+        android:id="@+id/navigation_estate_detail"
+        android:name="evans18.realestatebrowser.ui.fragment.estate.detail.EstateDetailFragment"
+        android:label=""
+        tools:layout="@layout/fragment_estate_detail" />
+
+    <fragment
+        android:id="@+id/navigation_information"
+        android:name="evans18.realestatebrowser.ui.fragment.information.InformationFragment"
+        android:label="@string/title_information"
+        tools:layout="@layout/fragment_information" />
+</navigation>

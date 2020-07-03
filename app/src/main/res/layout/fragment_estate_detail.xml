@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    tools:context=".ui.fragment.estate.detail.EstateDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_large">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/TextViewHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$??????" />
+
+            <!-- fill the remaining  width-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/details_section"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_count_bed"
+                    style="@style/TextViewEstateDetailItem.Larger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/ic_bed"
+                    android:text="S"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_count_bathroom"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintWidth_min="@dimen/estate_item_property_detail_item_width_min" />
+
+                <TextView
+                    android:id="@+id/tv_count_bathroom"
+                    style="@style/TextViewEstateDetailItem.Larger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/ic_bath"
+                    android:text="S"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_size"
+                    app:layout_constraintStart_toEndOf="@+id/tv_count_bed"
+                    app:layout_constraintWidth_min="@dimen/estate_item_property_detail_item_width_min" />
+
+                <TextView
+                    android:id="@+id/tv_size"
+                    style="@style/TextViewEstateDetailItem.Larger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/ic_layers"
+                    android:text="SS"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_distance_from_me"
+                    app:layout_constraintStart_toEndOf="@+id/tv_count_bathroom"
+                    app:layout_constraintWidth_min="@dimen/estate_item_property_detail_item_width_min" />
+
+                <!-- show only if distance can be calculated (whether user location is allowed) -->
+                <TextView
+                    android:id="@+id/tv_distance_from_me"
+                    style="@style/TextViewEstateDetailItem.Larger"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/ic_location"
+                    android:text="SS.S km"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_size" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextViewHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:text="@string/estate_detail_heading_description" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:text="PLACEHOLDER" />
+
+        <TextView
+            style="@style/TextViewHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:text="@string/estate_detail_heading_location" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="evans18.realestatebrowser.ui.fragment.estate.detail.map.NestedScrollViewMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/estate_details_map_height"
+            android:layout_marginTop="@dimen/spacing_large" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

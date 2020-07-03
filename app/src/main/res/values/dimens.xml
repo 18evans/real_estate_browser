@@ -1,0 +1,37 @@
+<resources>
+    <!-- Default screen margins (todo: confirm with (Android) Design guidelines.) -->
+    <dimen name="spacing_xxsmall">4dp</dimen>
+    <dimen name="spacing_xsmall">6dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+
+    <!-- Text-->
+    <dimen name="text_xlarge">24sp</dimen>
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_medium">12sp</dimen>
+    <dimen name="text_small">8sp</dimen>
+
+    <dimen name="default_corner_radius">10dp</dimen>
+    <dimen name="elevation_default">5dp</dimen>
+    <dimen name="estate_image_max_width">96dp</dimen>
+    <dimen name="estate_list_item_card_height">140dp</dimen>
+
+    <!-- EstateFragment List Loading Shimmer-->
+    <dimen name="shimmer_placeholder_text_price_width">90dp</dimen>
+    <dimen name="shimmer_placeholder_text_price_height">24dp</dimen>
+    <dimen name="shimmer_placeholder_text_address_width">120dp</dimen>
+    <dimen name="shimmer_placeholder_text_address_height">15dp</dimen>
+    <dimen name="shimmer_placeholder_section_details_height">24dp</dimen>
+
+    <!-- EstateFragment search-->
+    <dimen name="no_results_image_size">200dp</dimen>
+
+    <!-- MainActivity AppBar-->
+    <dimen name="app_bar_height">120dp</dimen>
+
+    <!-- EstateDetails -->
+    <dimen name="estate_details_map_height">300dp</dimen>
+    <dimen name="estate_item_property_detail_item_width_min">48dp</dimen>
+    <dimen name="estate_item_property_detail_item_small_width_min">36dp</dimen>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextViewEstateDetailItem" parent="TextViewEstateDetail">
+        <!-- attributes for >= 26 under here -->
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">8sp</item>
+    </style>
+</resources>

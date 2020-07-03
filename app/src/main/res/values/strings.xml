@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Real Estate Browser</string>
+    <string name="title_estates">Real Estate</string>
+    <string name="title_information">About</string>
+    <string name="estate_search_hint">Search for a home</string>
+
+    <!-- Estate List Item-->
+    <string name="postal_code_with_city">%1$s %2$s</string>
+
+    <!-- todo apply font to dollar sign-->
+    <string name="price_with_usd_currency">\$%s</string>
+    <string name="no_results_label">No results found!\nPerhaps try another search?</string>
+    <string name="header_design_and_development">Design and Development</string>
+    <string name="information_by_developer_contact">by evans18\n
+        <a href="www.github.com/18evans">Github</a>
+    </string>
+    <string name="estate_detail_heading_description">Description</string>
+    <string name="estate_detail_heading_location">Location</string>
+
+    <!--    Permissions-->
+    <string name="permission_denied_location">Will not ask again until restart.</string>
+    <string name="permission_camera_never_askagain">Will not ask about Location again.</string>
+    <string name="permission_rationale_location_title">Location Requested</string>
+    <string name="permission_rationale_location">Location is necessary in order to view how far the real estate offers are away from you.</string>
+
+    <string name="settings">Settings</string>
+    <string name="gps_settings_inadequate">Location settings are inadequate, and cannot be fixed here. Fix in Settings.</string>
+
+    <string name="estate_details_distance_kilometers_from_user">%.2f km</string>
+</resources>
