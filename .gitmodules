@@ -1,0 +1,3 @@
+[submodule "searchview"]
+	path = searchview
+	url = https://github.com/18evans/searchview
