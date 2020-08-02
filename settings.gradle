@@ -1,2 +1,3 @@
 include ':app'
+include ':searchview'
 rootProject.name = "Real Estate Browser"
